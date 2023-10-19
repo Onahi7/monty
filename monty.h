@@ -8,13 +8,13 @@
 #include <string.h>
 #include <ctype.h>
 /**
- * struct stack_s - doubly linked list representation of a stack (or queue)
- * @n: integer
- * @prev: points to the previous element of the stack (or queue)
- * @next: points to the next element of the stack (or queue)
+ * struct stack_s - Doubly linked list node for a stack (or queue)
+ * @n: Integer value stored in the node
+ * @prev: Pointer to the previous element
+ * @next: Pointer to the next element
  *
- * Description: doubly linked list node structure
- * for stack, queues, LIFO, FIFO Holberton project
+ * Description: Node structure for a doubly linked list used in stack and queue
+ * operations for the 0x19 project.
  */
 typedef struct stack_s
 {
@@ -56,23 +56,23 @@ ssize_t getstdin(char **lineptr, int file);
 char  *clean_line(char *content);
 void push(stack_t **head, unsigned int number);
 void pall(stack_t **head, unsigned int number);
-void f_pint(stack_t **head, unsigned int number);
-int execute(char *content, stack_t **head, unsigned int counter, FILE *file);
+void pints(stack_t **head, unsigned int number);
+int exec(char *content, stack_t **head, unsigned int counter, FILE *file);
 void free_stack(stack_t *head);
-void f_pop(stack_t **head, unsigned int counter);
-void f_swap(stack_t **head, unsigned int counter);
-void f_add(stack_t **head, unsigned int counter);
-void f_nop(stack_t **head, unsigned int counter);
-void f_sub(stack_t **head, unsigned int counter);
-void f_div(stack_t **head, unsigned int counter);
-void f_mul(stack_t **head, unsigned int counter);
-void f_mod(stack_t **head, unsigned int counter);
-void f_pchar(stack_t **head, unsigned int counter);
-void f_pstr(stack_t **head, unsigned int counter);
-void f_rotl(stack_t **head, unsigned int counter);
-void f_rotr(stack_t **head, __attribute__((unused)) unsigned int counter);
-void addnode(stack_t **head, int n);
-void addqueue(stack_t **head, int n);
-void f_queue(stack_t **head, unsigned int counter);
-void f_stack(stack_t **head, unsigned int counter);
+void pops(stack_t **head, unsigned int counter);
+void swaps(stack_t **head, unsigned int counter);
+void adds(stack_t **head, unsigned int counter);
+void nops(stack_t **head, unsigned int counter);
+void subs(stack_t **head, unsigned int counter);
+void divs(stack_t **head, unsigned int counter);
+void mull(stack_t **head, unsigned int counter);
+void mods(stack_t **head, unsigned int counter);
+void pchar(stack_t **head, unsigned int counter);
+void pstrs(stack_t **head, unsigned int counter);
+void rotls(stack_t **head, unsigned int counter);
+void rotrs(stack_t **head, __attribute__((unused)) unsigned int counter);
+void add_node(stack_t **head, int n);
+void add_queue(stack_t **head, int n);
+void q(stack_t **head, unsigned int counter);
+void stacks(stack_t **head, unsigned int counter);
 #endif
